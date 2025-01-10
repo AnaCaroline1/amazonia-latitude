@@ -1,22 +1,20 @@
 /*GERAL*/
-
-*,
-*:after,
-*:before {
-    margin: 0;
+*{
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
-    border: 0;
-    background-color: transparent;
+    margin: 0;
+    box-sizing: border-box;   
 }
 
 html,
 body {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    color: #4d4d4d;
-    width: auto;
-    overflow-x: hidden
-    /*;
-    background-color: #812314; */
+    height: 100%;
+    background-color: rgb(223, 223, 223);
+    transition: 0.3s;
 }
 
+#header, #header a {
+    background-color: #812314;
+    color: aliceblue;
+}
 

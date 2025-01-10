@@ -1,6 +1,8 @@
 .white-mode{
-    background: rgba(252, 252, 252, 0.973);
+    background-color: white;
 }
 .dark-mode{
-    background: rgb(39, 39, 39);
+    background-color: rgb(46, 46, 46);
+    color: aliceblue;
 }
+/* , .dark-mode .navbar,  .dark-mode .navbar-brand, .dark-mode #header a  */
