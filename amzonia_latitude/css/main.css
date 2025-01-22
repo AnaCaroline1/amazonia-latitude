@@ -1,20 +1,130 @@
 /*GERAL*/
-*{
+/*GERAL*/
+* {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo-footer: linear-gradient(100deg, #131313, #202020 60%);
+
+    --font-color: #f3efef;
+    --font-banner: #383838;
+
+    --fundo-escuro: #f0f0f07a;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+ 
 }
 
 html,
 body {
+    width: 100%;
     height: 100%;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(236, 236, 236);
     transition: 0.3s;
 }
 
-#header, #header a {
+#header,
+#header a {
     background-color: #812314;
     color: aliceblue;
 }
+#header{
+    display: flex;
+    
+    width: auto;
+    height: auto;
+    margin-bottom: 5%;
+    box-shadow:0 0 5px 2px black;
+}
+#header > nav div{
+    flex: 1;
+}
 
+.navbar-collapse > div, ul{
+    display: flexbox;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 2em;
+    margin: 2em;
+}
+
+.container-fluid > div, p{
+    display:block;
+    justify-content: end;
+
+}
+
+/* Fim do topo do site */
+
+/* Início do conteúdo */
+#main {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 2px 2px 2px;
+}
+
+#container-banner {
+    /* background-image: url("/img/beautiful-landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 2em;
+    margin: 0 auto;
+    background: var(--fundo-escuro);
+    
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+#container-banner img{
+    border-radius: 3%;
+    box-shadow: 2px 2px 2px 2px rgb(61, 58, 58);
+}
+
+#container-banner h1 {
+    font-size: 45px;
+    margin: 3%;
+}
+
+#container-banner p {
+    margin: 4%;
+    text-indent: 5%;
+    font-size:20px;
+    text-align: justify;
+}
+/* Fim do conteúdo */
+
+/* Início do rodapé */
+
+#rodape{
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: auto;
+}
+#content-rodape{
+    display: grid;
+    grid-template: 150px / auto auto auto;
+    grid-gap: 40px;
+    padding: 0px;
+    margin: 2em 2em 0 2em;
+}
+#contato, #localizado, #copy{
+    margin-top: 2em;
+    font-size: 18px;
+    color: white;
+}
+#redes{
+    border-radius: 5%;
+}
+#copy{
+    text-align: center;
+}
