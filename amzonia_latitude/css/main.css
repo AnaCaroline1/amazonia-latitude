@@ -44,21 +44,78 @@ body {
     flex: 1;
 }
 
-.navbar-collapse > div, ul{
-    display: flexbox;
-    flex-direction: row;
-    align-items: flex-end;
-    padding: 2em;
-    margin: 2em;
+
+.navbar-brand {
+    margin-right: 2rem;
+    padding-right: 70%;
 }
 
-.container-fluid > div, p{
-    display:block;
-    justify-content: end;
+button.navbar-toggler {
+    background-color: #ededed;
+    border: 2px solid #f3f3f3;
+}
+
+.navbar-toggler {
+    padding-left: 5%;
+    margin-left: 2rem;
+}
+
+.form-check {
+    padding-left: 5%;
+    margin-left: 1rem;
+}
+
+/* Editando nav list */
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    list-style: none;
 
 }
 
-/* Fim do topo do site */
+.nav-list a {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    padding-block: 5px;
+}
+
+
+.collapse.navbar-nav>ul {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    padding: 2rem;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-around;
+    gap: 1em;
+    pointer-events: none;
+
+    z-index: 1000;
+}
+
+.nav-item > a {
+    text-decoration: none;
+
+    top: 1em;
+    padding-block: 20px;
+    margin: 0.5em;
+    font-size: 25px;
+}
+
+
+
+/* Fim do Header */
+
+/* Início do Main */
 
 /* Início do conteúdo */
 #main {
@@ -69,9 +126,6 @@ body {
 }
 
 #container-banner {
-    /* background-image: url("/img/beautiful-landscape.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,28 +157,155 @@ body {
 }
 /* Fim do conteúdo */
 
-/* Início do rodapé */
+/* Footer */
 
-#rodape{
-    background-color: rgb(22, 22, 22);
+footer {
+    position: relative;
+    background: var(--fundo-footer);
     width: 100%;
-    height: auto;
 }
-#content-rodape{
+
+#footer_content {
     display: grid;
-    grid-template: 150px / auto auto auto;
-    grid-gap: 40px;
-    padding: 0px;
-    margin: 2em 2em 0 2em;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2em;
 }
-#contato, #localizado, #copy{
-    margin-top: 2em;
+
+#footer_content a {
+    padding: 10px;
     font-size: 18px;
-    color: white;
+    font-weight: 570;
+    color: var(--font-color);
+    text-decoration: none;
 }
-#redes{
-    border-radius: 5%;
+
+/* fim dos projetos */
+.block {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 10px 0 0 5px;
+    padding: 20px;
 }
-#copy{
-    text-align: center;
+
+.block h2 {
+    margin-bottom: 1.5rem;
+
+    font-size: 20px;
+    font-weight: 650;
+    color: #fff;
+}
+
+.block a {
+    display: inline-block;
+
+    margin-bottom: 1.6em;
+}
+
+.block:nth-child(1) i,
+.block:nth-child(3) i {
+    font-size: 16px;
+    padding-right: 1rem;
+}
+
+.block:nth-child(1) a:hover,
+.block:nth-child(3) a:hover {
+    background-color: #3332325e;
+}
+
+.block:nth-child(2) .icons {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.icons a i {
+    font-size: 30px;
+}
+
+.icons .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 3px;
+}
+
+.social:hover {
+    background-color: #33323265;
+    border-radius: 50%;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 0 20px;
+    background: var(--fundo-footer);
+    color: #cccccc;
+    font-weight: 600;
+
+}
+
+.copy span:hover {
+    transition: .5s;
+    color: #fff;
+}
+
+@media screen and (max-width:950px) {
+
+    footer {
+        padding: 0;
+    }
+
+    #footer_content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .copy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2rem 1.3rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    footer {
+        padding: 0;
+    }
+
+    #footer_content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .copy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2rem 1.3rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    footer {
+        padding: 0;
+    }
+
+    #footer_content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
 }
