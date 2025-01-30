@@ -21,55 +21,45 @@
 <body id="body">
     <header id="header">
         <nav class="navbar">
-            <div class="container-fluid">         
+            <div class="container-fluid">
                 <a class="navbar-brand" href="https://radio.ufpa.br/">Radio Web UFPA</a>
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" role="switch" id="colormode">
                     <label class="form-check-label" for="flexSwitchCheckChecked">Color Mode</label>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list" role="menu">
-                        <li class="nav-item"><a href="https://radio.ufpa.br/player"><i class="fa-solid fa-radio"></i>
-                                Player</a></li>
-                        <li class="nav-item"><a href="https://www.radio.ufpa.br/webdoc60/"><i
-                                    class="fa-solid fa-caret-right"></i> Web Doc UFPA 60 anos</a></li>
-                        <li class="nav-item"><a href="https://radio.ufpa.br/eleicao-ufpa"><i
-                                    class="fa-solid fa-caret-right"></i> Eleições na UFPA</a></li>
-                        <li class="nav-item"><a href="https://radio.ufpa.br/projetos/naea-45-anos/"><i
-                                    class="fa-solid fa-caret-right"></i> NAEA 45 Anos</a></li>
+                        <li class="nav-item"><a href="https://radio.ufpa.br/player"><i class="fa-solid fa-radio"></i> Player</a></li>
+                        <li class="nav-item"><a href="https://www.radio.ufpa.br/webdoc60/"><i class="fa-solid fa-caret-right"></i> Web Doc UFPA 60 anos</a></li>
+                        <li class="nav-item"><a href="https://radio.ufpa.br/eleicao-ufpa" ><i class="fa-solid fa-caret-right"></i> Eleições na UFPA</a></li>
+                        <li class="nav-item"><a href="https://radio.ufpa.br/projetos/naea-45-anos/" ><i class="fa-solid fa-caret-right"></i> NAEA 45 Anos</a></li>
                     </ul>
-                    <div class="container-fluid">
-                        <p>Compartilhe</p>
-                        <div class="shared-buttons">
-                            <a href="" id="whatsapp-share-btt" rel="nofollow" target="_blank"
-                               
-                                class="whatsapp-share-button"></a>
-                            <a href="" id="facebook-share-btt" rel="nofollow" target="_blank"
-                               
-                                class="facebook-share-button"></a>
-                            <a href="" id="twitter-share-btt" rel="nofollow" target="_blank"
-                               
-                                class="twitter-share-button"></a>
+                    <div class="container-share">
+                        <a class="navbar-brand" id="share"><p>Compartilhe</p></a>
+                        <div class="shared-buttons" id="btnn-share">
+                            <a href="" id="whatsapp-share-btt" rel="nofollow" target="_blank" class="whatsapp-share-button"></a>
+                            <a href="" id="facebook-share-btt" rel="nofollow" target="_blank" class="facebook-share-button"></a>
+                            <a href="" id="twitter-share-btt" rel="nofollow" target="_blank" class="twitter-share-button"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <div id="container-banner">
+    <main id="main">
+        <section id="amazonia-banner">
             <img id="background-bnn" src="./img/amazonia-latitude.png" alt="Banner Amazônia Latitude">
+        </section>
+        <section id="sobre" class="sobre">
             <h1>Amazônia Latitude</h1>
             <p>Revista Amazônia Latitude é a mais nova parceira da Rádio Web UFPA na produção de conteúdos sobre
                 divulgação científica sobre e/na Amazônia.<br>Juntas as duas instituições passam a produzir três
                 Programas/PodCasts: O programa de Entrevistas LatitudeCast; O PodCast de reportagens Olho d’água; e O
-                boletim semanal “Amazônia em 5 Minutos”.
-            </p>
-        </div>
+                boletim semanal “Amazônia em 5 Minutos”.</p>
+        </section>
     </main>
     <footer>
         <div id="footer_content">
