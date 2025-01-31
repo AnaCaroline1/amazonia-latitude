@@ -156,13 +156,97 @@ button.navbar-toggler {
     margin-left: 1em;
     padding:1rem;
     max-width: 80%;
-    text-align: justify;
   
     
     font-family:'Times New Roman', Times, serif;
     font-size: 25px;
   
 }
+
+/* Podcasters */
+
+#podcast{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-content: center;
+  
+  max-width: 100%;
+  padding: 2em;
+  margin: 0 auto;
+  
+  background:#812314;
+}
+#podcast h1{
+    font-size: 45px;
+    font-family:'Times New Roman', Times, serif;
+  
+    border-bottom: 4px solid #f5f5f5;
+    color: #ffffff;
+    align-self: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    height: 10%;
+}
+#podcast h2{
+    
+    color: #ffffff;
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 1rem;
+    border-bottom: 4px solid #d8d8d8;
+}
+#podcast-card-content{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-start; */
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+
+  max-width: 100%;
+}
+#podcast-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* border-radius: 20px;
+  box-shadow: 0 6px 20px 0 #1d1a1aa1; */
+
+  max-width: auto;
+  margin: 1rem;
+  padding: 1rem;
+}
+#podcast-card img{
+    width: 350px;
+    padding: .5rem;
+    margin-top: 10px;
+    max-width: 80%;
+}
+
+#podcast-card button{
+    background: linear-gradient(40deg, #1d1d1d, #333333);
+    border: none;
+    
+    box-shadow: 0 2px 10px 0 #474747a1;
+
+    width: 350px;
+    padding: .5rem;
+    max-width: 75%;
+}
+#podcast-card a{
+    
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #e7e7e7;
+    padding-block: 5px;
+
+    text-decoration: none;
+}
+
 /* Fim do conteúdo */
 
 /* Footer */
