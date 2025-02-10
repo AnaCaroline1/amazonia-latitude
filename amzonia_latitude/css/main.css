@@ -56,59 +56,67 @@ button.navbar-toggler {
 
 /* Editando nav list */
 
-.nav-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 32px;
-
+.navbar-collapse > ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.navbar-nav {
+    margin-top: 1rem;
     list-style: none;
 
 }
-
-.nav-list a {
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    /* padding: 10px; */
+}
+.nav-item a {
     display: block;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     color: #fff;
-    padding-block: 5px;
+    /* padding-block: 5px; */
 }
-
-
-.collapse.navbar-nav>ul {
-    display: block;
-    position: absolute;
-    width: 100vw;
-    height: 50vh;
-    padding: 2rem;
-
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: space-around;
-    gap: 1em;
-    pointer-events: none;
-
-    z-index: 1000;
-}
-
 .nav-item > a {
     text-decoration: none;
-
     top: 1em;
-    padding-block: 20px;
+    /* padding-block: 20px; */
     margin: 0.5em;
     font-size: 25px;
+} 
+.nav-item:hover{
+    box-shadow:2px 2px 4px 0 #ffffff;
 }
 
 /* Editando o Compartilhar */
-
-.container-share > a{
-    background: linear-gradient(120deg,#812314, #000000, #812314);
+.navbar-collapse > .container-share {
+    margin-top: 1rem;
+}
+.container-share > .shared-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.shared-buttons> p{
+    color: var(--font-color);
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* .container-share > p div{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+ 
+} */
+/* .container-share > a{
     display: grid;
     grid-template-rows: repeat(2, 2fr);
-    justify-content: center;
-    max-width: 100%;
-}
+    justify-content: right;
+} 
+*/
 
 /* Fim do Header */
 
@@ -249,6 +257,7 @@ button.navbar-toggler {
 }
 
 @media screen and (max-width:1080px) {
+    
     #podcast-card-content{
         display: flex;
         flex-wrap: wrap;
@@ -315,6 +324,12 @@ button.navbar-toggler {
         margin: 0.5em;
         font-size: 20px;
     }
+
+    .navbar-collapse > ul{
+        display: flex;
+        flex-direction: column;
+    }
+
     #sobre h1{
         padding: 1rem;
         font-size: 40px;
