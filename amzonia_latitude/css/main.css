@@ -202,6 +202,7 @@ button.navbar-toggler {
   padding: 2em;
   margin: 0 auto;
   
+  
   background:#641b10;
 }
 #podcast h1{
@@ -245,6 +246,7 @@ button.navbar-toggler {
   max-width: auto;
   margin: 1rem;
   max-width: 100%;
+  margin-bottom: 30px;
 }
 #podcast-card img{
     width: 450px;
@@ -285,6 +287,19 @@ button.navbar-toggler {
     text-decoration: none;
 }
 
+@media screen and (max-width:1300px){
+    #podcast-card img{
+        width: 350px;
+        height: 310px;
+        padding: .1rem;
+        margin-top: 10px;
+        max-width: 80%;
+        transition: 0.4s;
+    }
+    #podcast h2{
+        font-size: 25px;
+    }
+}
 
 @media screen and (max-width:1000px){
     html,
@@ -393,6 +408,7 @@ button.navbar-toggler {
         justify-content: center;
         align-items: center;
         padding:3rem; */
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         
