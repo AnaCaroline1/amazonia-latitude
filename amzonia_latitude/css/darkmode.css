@@ -1,5 +1,14 @@
-.white-mode{
-    background-color: white;
+.white-mode > #sobre h1{
+    background-color: rgb(255, 255, 255);
+    color: var(--font-banner);
+}
+.white-mode > #sobre p{
+    background-color: rgb(255, 255, 255);
+    color: var(--font-banner);
+}
+.dark-mode #header{
+    margin-bottom: 5%;
+    box-shadow:0 0 5px 2px rgb(61, 58, 58);
 }
 
 .dark-mode{
@@ -7,3 +16,9 @@
     color: aliceblue;
 }
 
+.dark-mode > main{
+    background-color: rgb(46, 46, 46);
+}
+/* .dark-mode #container-banner{
+    background-color:rgb(46, 46, 46);
+} */

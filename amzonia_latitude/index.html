@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,20 @@
     <link rel="stylesheet" href="css/darkmode.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/shared-buttons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" href="./img/icon.png" type="image/png">
     <title>Amazônia Latitude</title>
 </head>
+
 <body id="body">
     <header id="header">
         <nav class="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="https://radio.ufpa.br/">Radio Web UFPA</a>
+                <a class="navbar-brand" href="https://radio.ufpa.br/"><img src="./img/logo-radio-web-ufpa.png" alt="Radio Web UFPA"></a>
                 <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" role="switch" id="colormode">
                     <label class="form-check-label" for="flexSwitchCheckChecked">Color Mode</label>
@@ -35,9 +37,9 @@
                         <li class="nav-item"><a href="https://radio.ufpa.br/eleicao-ufpa" ><i class="fa-solid fa-caret-right"></i> Eleições na UFPA</a></li>
                         <li class="nav-item"><a href="https://radio.ufpa.br/projetos/naea-45-anos/" ><i class="fa-solid fa-caret-right"></i> NAEA 45 Anos</a></li>
                     </ul>
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="https://radio.ufpa.br/">Compartilhe</a>
-                        <div class="shared-buttons">
+                    <div class="container-share">
+                        <div class="shared-buttons" id="btnn-share">
+                            <p>Compartilhe</p>
                             <a href="" id="whatsapp-share-btt" rel="nofollow" target="_blank" class="whatsapp-share-button"></a>
                             <a href="" id="facebook-share-btt" rel="nofollow" target="_blank" class="facebook-share-button"></a>
                             <a href="" id="twitter-share-btt" rel="nofollow" target="_blank" class="twitter-share-button"></a>
@@ -48,22 +50,57 @@
         </nav>
     </header>
     <main id="main">
-        <section id="amazonia-banner">
-            <img id="background-bnn" src="./img/amazonia-latitude.png" alt="Banner Amazônia Latitude">
+        <!-- <section id="amazonia-banner">
+            <img id="background-bnn" src="./img/amazonia-banner.png" alt="Banner Amazônia Latitude">
+        </section> -->
+        <section id="sobre">
+            <div  class="sobre">
+                <h1>Amazônia Latitude</h1>
+                <p>Revista Amazônia Latitude é a mais nova parceira da Rádio Web UFPA na produção de conteúdos sobre
+                    divulgação científica sobre e/na Amazônia.<br><br>Juntas as duas instituições passam a produzir três
+                    Programas/PodCasts: O programa de Entrevistas LatitudeCast; O PodCast de reportagens Olho d’água; e O
+                    boletim semanal “Amazônia em 5 Minutos”.
+                </p>
+            </div>
         </section>
-        <section id="sobre" class="sobre">
-            <h1>Amazônia Latitude</h1>
-            <p>Revista Amazônia Latitude é a mais nova parceira da Rádio Web UFPA na produção de conteúdos sobre divulgação científica sobre e/na Amazônia.<br>Juntas as duas instituições passam a produzir três Programas/PodCasts: O programa de Entrevistas LatitudeCast; O PodCast de reportagens Olho d’água; e O boletim semanal “Amazônia em 5 Minutos”.</p>
+        <section id="podcast">
+            <h1>Ouça os Podcasters</h1>
+                <section id="podcast-card-content">                    
+                    <div id="podcast-card">
+                        <img  src="./img/Olho D'água - Amazônia Latitude.png">
+                        <h2>Olho d'Água</h2>
+                        <button class="ouvir-pod">
+                            <a href="https://www.amazonialatitude.com/category/latitude-talks/olho-dagua/">
+                                Ouça o Olho d'Água
+                            </a>
+                        </button>
+                    </div>
+                    <div id="podcast-card">
+                        <img  src="./img/Amazônia-em-5-Minutos-31-01-25-3X4.jpg">
+                        <h2>Amazônia em 5 Minutos</h2>
+                        <button class="ouvir-pod">
+                            <a  href="https://www.amazonialatitude.com/category/latitude-talks/amazonia-five-minutes-podcast/">Ouça o Amazônia em 5 Minutos</a>
+                        </button> 
+                    </div>
+                    <div id="podcast-card">
+                        <img src="./img/latitude_cast.png"> 
+                        <h2>LatitudeCast</h2>
+                        <button class="ouvir-pod">
+                            <a href="https://www.amazonialatitude.com/tag/latitudecast/">Ouça o LatitudeCast</a>
+                        </button>
+                    </div>
+            </section>
         </section>
     </main>
-<footer>
+    <footer>
         <div id="footer_content">
             <div class="block">
                 <h2>Contato</h2>
                 <div>
-                    <a class="action contact icon-email" href="mailto:radio@ufpa.br"
-                        title="Email"><i class="fa-solid fa-envelope"></i>radio@ufpa.br</a><br>
-                    <a class="action contact icon-phone" href="tel:+55(91)3201-7768" title="Telefone"><i class="fa-solid fa-phone"></i>+55 (91)
+                    <a class="action contact icon-email" href="mailto:radio@ufpa.br" title="Email"><i
+                            class="fa-solid fa-envelope"></i>radio@ufpa.br</a><br>
+                    <a class="action contact icon-phone" href="tel:+55(91)3201-7768" title="Telefone"><i
+                            class="fa-solid fa-phone"></i>+55 (91)
                         3201-7768</a>
                 </div>
             </div>
@@ -87,16 +124,20 @@
             <div class="block">
                 <h2>Endereço</h2>
                 <a class="action local icon-local" href="https://goo.gl/maps/KJwPF8PDQFm" target="_blank"
-                  title="Endereço"><i class="fa-solid fa-location-dot"></i>Rua Augusto Corrêa, 01<br>ILC UFPA - Belém, PA<br>66075-110
-                 </a>
+                    title="Endereço"><i class="fa-solid fa-location-dot"></i>Rua Augusto Corrêa, 01<br>ILC UFPA - Belém,
+                    PA<br>66075-110
+                </a>
             </div>
-           </div>
-           <div class="copy">
-              <span>© 2025 Rádio Web UFPA. Todos os direitos reservados.</span>
-           </div>
-</footer>
-<script src="js/shared.js"></script>
-<script src="js/darkmode.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
+        </div>
+        <div class="copy">
+            <span>© 2025 Rádio Web UFPA. Todos os direitos reservados.</span>
+        </div>
+    </footer>
+    <script src="js/shared.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
